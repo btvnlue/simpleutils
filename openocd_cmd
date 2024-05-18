@@ -1,0 +1,1 @@
+openocd -c 'adapter driver hla' -c 'hla_layout stlink' -c 'bindto 0.0.0.0' -c 'hla_vid_pid 0x0483 0x374b' -c 'transport select hla_swd' -c 'reset_config trst_and_srst' -f /usr/share/openocd/scripts/target/stm32f1x.cfg
